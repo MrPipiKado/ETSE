@@ -28,7 +28,7 @@ enum {SURNAME, NAME, DAY, MONTH, YEAR, MARK_0, MARK_1, MARK_2, MARK_3, MARK_4};
 
 int check_input(char* input);
 STUDENT* create_list(char *input);
-STUDENT* add_student(STUDENT *head);
+STUDENT* add_student(STUDENT **head);
 STUDENT* delete_by_surname(STUDENT **head, char *surname);
 STUDENT* sort_by_surname(STUDENT **head);
 void print_students(STUDENT *head);

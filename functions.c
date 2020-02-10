@@ -40,6 +40,11 @@ static int print_head_of_table(int length)
 
 STUDENT* sort_by_surname(STUDENT **head)
 {
+    if(!(*head))
+    {
+        fprintf(stderr, "List is empty\n");
+        return *head;
+    }
     STUDENT *p1 ,*p2 , *pp1 , *pp2 , *tmp ;
     int i;
     for(p1=*head; p1->next; p1=p1->next )
@@ -51,9 +56,9 @@ STUDENT* sort_by_surname(STUDENT **head)
             i = 0;
             while(p1->surname[i] < p2->surname[i] && p1->surname[i]!='\0' && p2->surname[i]!='\0')
             {
-                ++i;
+              ++i;
             }
-            if(p1->surname[i] < p2->surname[i])
+            if(p1->surname[i] > p2->surname[i])
             {
                 if(p1->next == p2)
                 {
@@ -84,6 +89,11 @@ STUDENT* sort_by_surname(STUDENT **head)
 STUDENT* delete_by_surname(STUDENT **head, char *surname)
 {
     STUDENT *p = *head, *pp = NULL;
+    if(!(*head))
+    {
+        fprintf(stderr, "List is empty\n");
+        return *head;
+    }
     if(!strcmp((*head)->surname, surname))
     {
         *head = p->next;
@@ -106,16 +116,24 @@ STUDENT* delete_by_surname(STUDENT **head, char *surname)
     return *head;
 }
 
-STUDENT* add_student(STUDENT *head)
+STUDENT* add_student(STUDENT **head)
 {
     STUDENT *p_end;
-    for(p_end = head; p_end->next!=NULL; p_end = p_end->next);
-    p_end->next = (STUDENT*)malloc(sizeof(STUDENT));
-    p_end = p_end->next;
+    if(!(*head))
+    {
+        p_end = (STUDENT*)malloc(sizeof(STUDENT));
+        *head = p_end;
+    }
+    else
+    {
+        for (p_end = *head; p_end->next != NULL; p_end = p_end->next);
+        p_end->next = (STUDENT *) malloc(sizeof(STUDENT));
+        p_end = p_end->next;
+    }
     if(!(p_end))
     {
         fprintf(stderr, "Can not allocate so much memory");
-        return head;
+        return *head;
     }
 
     int j = 0;
@@ -169,10 +187,10 @@ STUDENT* add_student(STUDENT *head)
         j++;
         if(j>MARK_4)break;
     }
-    sort_by_surname(&head);
+    sort_by_surname(head);
 
     fprintf(stdout, "Added)\n");
-    return head;
+    return *head;
 }
 
 void print_students(STUDENT *head)

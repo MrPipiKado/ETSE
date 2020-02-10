@@ -28,7 +28,7 @@ int main()
         }
         if(option==3)
         {
-            head = add_student(head);
+            head = add_student(&head);
         }
         print_students(head);
     }while(1);
