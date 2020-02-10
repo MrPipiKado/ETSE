@@ -1,5 +1,20 @@
 #include "functions.h"
 
+static STUDENT* find_max(STUDENT *head)
+{
+    STUDENT *max = head, *p;
+    char maax = head->surname[0];
+    for(p = head; p->next!=NULL; p = p->next)
+    {
+        if(p->surname[0]<maax)
+        {
+            maax = p->surname[0];
+            max = p;
+        }
+    }
+    return max;
+}
+
 static STUDENT* prev_student(STUDENT *head, STUDENT *puk)
 {
     if(puk==head)
@@ -49,8 +64,10 @@ STUDENT* sort_by_surname(STUDENT **head)
             pp1=prev_student(*head,p1);
             pp2=prev_student(*head,p2);
             i = 0;
-            while(p1->surname[i] == p2->surname[i] && p1->surname[i]!='\0' && p1->surname[i]!='\0')
+            while(p1->surname[i] < p2->surname[i] && p1->surname[i]!='\0' && p2->surname[i]!='\0')
+            {
                 ++i;
+            }
             if(p1->surname[i] < p2->surname[i])
             {
                 if(p1->next == p2)
@@ -77,4 +94,140 @@ STUDENT* sort_by_surname(STUDENT **head)
         }
     }
     return *head;
+}
+
+STUDENT* delete_by_surname(STUDENT **head, char *surname)
+{
+    STUDENT *p = *head, *pp = NULL, *ph = *head;
+    if(!strcmp((*head)->surname, surname))
+    {
+        *head = p->next;
+        free(p);
+        return *head;
+    }
+    p = *head;
+    while(p)
+    {
+        if(!strcmp((*head)->surname, surname))
+        {
+            pp = prev_student(*head, p);
+            pp->next = p->next;
+            free(p);
+            return *head;
+        }
+        p = p->next;
+    }
+    fprintf(stdout, "Can not find %s", surname);
+    return *head;
+}
+
+STUDENT* add_student(STUDENT *head)
+{
+    STUDENT *p_end;
+    for(p_end = head; p_end->next!=NULL; p_end = p_end->next);
+    p_end->next = (STUDENT*)malloc(sizeof(STUDENT));
+    p_end = p_end->next;
+    if(!(p_end))
+    {
+        fprintf(stderr, "Can not allocate so much memory");
+        return head;
+    }
+
+    int j = 0;
+    while (1)
+    {
+        switch (j)
+        {
+            case SURNAME:
+                fprintf(stdout, "Enter surname:");
+                scanf("%s", p_end->surname);
+                break;
+            case NAME:
+                fprintf(stdout, "Enter name:");
+                scanf("%s", p_end->name);
+                break;
+            case DAY:
+                fprintf(stdout, "Enter day of birth:");
+                scanf("%d", &(p_end->date.day));
+                break;
+            case MONTH:
+                fprintf(stdout, "Enter month of birth:");
+                scanf("%d", &(p_end->date.month));
+                break;
+            case YEAR:
+                fprintf(stdout, "Enter year of birth:");
+                scanf("%d", &(p_end->date.year));
+                break;
+            case MARK_0:
+                fprintf(stdout, "Enter first mark:");
+                scanf("%d", &(p_end->marks[0]));
+                break;
+            case MARK_1:
+                fprintf(stdout, "Enter second mark:");
+                scanf("%d", &(p_end->marks[1]));
+                break;
+            case MARK_2:
+                fprintf(stdout, "Enter third mark:");
+                scanf("%d", &(p_end->marks[2]));
+                break;
+            case MARK_3:
+                fprintf(stdout, "Enter fourth mark:");
+                scanf("%d", &(p_end->marks[3]));
+                break;
+            case MARK_4:
+                fprintf(stdout, "Enter fifth mark:");
+                scanf("%d", &(p_end->marks[4]));
+                break;
+        }
+        j++;
+        if(j>MARK_4)break;
+    }
+    sort_by_surname(&head);
+
+    fprintf(stdout, "Added)\n");
+    return head;
+}
+
+void print_students(STUDENT *head)
+{
+    if(!head)
+    {
+        fprintf(stderr, "List is empty\n");
+        return;
+    }
+    STUDENT *p = head;
+    print_head_of_table(NAME_LENGTH*2);
+    while (p)
+    {
+        fprintf(stdout, "|");
+        fprintf(stdout, "%-*s",NAME_LENGTH, p->surname);
+        fprintf(stdout, "| |");
+        fprintf(stdout, "%-*s",NAME_LENGTH, p->name);
+        fprintf(stdout, "| |");
+        fprintf(stdout, "%02d", p->date.day);
+        fprintf(stdout, "| |");
+        fprintf(stdout, "%02d", p->date.month);
+        fprintf(stdout, "| |");
+        fprintf(stdout, "%-4d", p->date.year);
+        fprintf(stdout, "| |");
+        for(int k=0; k<MARKS_COUNT; ++k)
+        {
+            fprintf(stdout, "%1d", p->marks[k]);
+            fprintf(stdout, "|");
+        }
+        fprintf(stdout, "\n");
+        p = p->next;
+    }
+    printf("\n");
+}
+
+void free_list(STUDENT *head)
+{
+    STUDENT *tmp;
+    while (head)
+    {
+        tmp = head;
+        head = head->next;
+        free(tmp);
+    }
 }
