@@ -24,15 +24,21 @@ typedef struct student
     struct student *next;
 } STUDENT;
 
+typedef struct list
+{
+    STUDENT *head;
+    float avg_mark;
+}LIST;
+
 enum {SURNAME, NAME, DAY, MONTH, YEAR, MARK_0, MARK_1, MARK_2, MARK_3, MARK_4};
 
 int check_input(char* input);
 STUDENT* create_list(char *input);
-STUDENT* add_student(STUDENT **head);
-STUDENT* delete_by_surname(STUDENT **head, char *surname);
+LIST* add_student(LIST **head);
+LIST* delete_by_surname(LIST **list, char *surname);
 STUDENT* sort_by_surname(STUDENT **head);
-void print_students(STUDENT *head);
-void free_list(STUDENT *head);
+void print_students(LIST *list);
+void free_list(LIST **list);
 
 
 #endif //ETSE_FUNCTIONS_H

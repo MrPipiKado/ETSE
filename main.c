@@ -3,10 +3,12 @@
 
 int main()
 {
-    STUDENT *head = NULL;
+    LIST *students_list = (LIST*)malloc(sizeof(LIST));
+    students_list->head = NULL;
+    students_list->avg_mark = 0.0f;
     int option = 0, sorted = 1;
     char surname[NAME_LENGTH];
-    print_students(head);
+    print_students(students_list);
     do
     {
 
@@ -17,22 +19,22 @@ int main()
         if(option==1)
             if(sorted)
             {
-                head = sort_by_surname(&head);
+                sort_by_surname(&(students_list->head));
                 sorted = 0;
             }
         if(option==2)
         {
             printf("Enter surname:");
             scanf("%s", surname);
-            head = delete_by_surname(&head, surname);
+            delete_by_surname(&students_list, surname);
         }
         if(option==3)
         {
-            head = add_student(&head);
+            add_student(&students_list);
         }
-        print_students(head);
+        print_students(students_list);
     }while(1);
-    free_list(head);
+    free_list(&students_list);
 
     return 0;
 }

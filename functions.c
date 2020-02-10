@@ -1,5 +1,29 @@
 #include "functions.h"
 
+static LIST* calculate_avg(LIST **list)
+{
+    STUDENT *p = (*list)->head;
+    int count = 0;
+    float sum = 0.0f;
+    if(!p)
+    {
+        fprintf(stderr, "List is empty\n");
+        return *list;
+    }
+    while(p)
+    {
+        for(int i = 0; i<MARKS_COUNT; ++i)
+        {
+            sum +=(float)(p->marks[i]);
+            ++count;
+        }
+        p = p->next;
+    }
+    (*list)->avg_mark = sum / (float)count;
+    return *list;
+}
+
+
 static STUDENT* prev_student(STUDENT *head, STUDENT *puk)
 {
     if(puk==head)
@@ -81,54 +105,56 @@ STUDENT* sort_by_surname(STUDENT **head)
     return *head;
 }
 
-STUDENT* delete_by_surname(STUDENT **head, char *surname)
+LIST* delete_by_surname(LIST **list, char *surname)
 {
-    STUDENT *p = *head, *pp = NULL;
-    if(!(*head))
+    STUDENT *p = (*list)->head, *pp = NULL;
+    if(!(p))
     {
         fprintf(stderr, "List is empty\n");
-        return *head;
+        return *list;
     }
-    if(!strcmp((*head)->surname, surname))
+    if(!strcmp(((*list)->head)->surname, surname))
     {
-        *head = p->next;
+        (*list)->head = p->next;
         free(p);
-        return *head;
+        calculate_avg(list);
+        return *list;
     }
-    p = *head;
+    p = (*list)->head;
     while(p)
     {
-        if(!strcmp((*head)->surname, surname))
+        if(!strcmp(((*list)->head)->surname, surname))
         {
-            pp = prev_student(*head, p);
+            pp = prev_student((*list)->head, p);
             pp->next = p->next;
             free(p);
-            return *head;
+            calculate_avg(list);
+            return *list;
         }
         p = p->next;
     }
     fprintf(stdout, "Can not find %s", surname);
-    return *head;
+    return *list;
 }
 
-STUDENT* add_student(STUDENT **head)
+LIST* add_student(LIST **list)
 {
     STUDENT *p_end;
-    if(!(*head))
+    if(!((*list)->head))
     {
         p_end = (STUDENT*)malloc(sizeof(STUDENT));
-        *head = p_end;
+        (*list)->head = p_end;
     }
     else
     {
-        for (p_end = *head; p_end->next != NULL; p_end = p_end->next);
+        for (p_end = (*list)->head; p_end->next != NULL; p_end = p_end->next);
         p_end->next = (STUDENT *) malloc(sizeof(STUDENT));
         p_end = p_end->next;
     }
     if(!(p_end))
     {
         fprintf(stderr, "Can not allocate so much memory");
-        return *head;
+        return *list;
     }
 
     int j = 0;
@@ -182,20 +208,20 @@ STUDENT* add_student(STUDENT **head)
         j++;
         if(j>MARK_4)break;
     }
-    sort_by_surname(head);
-
+    sort_by_surname(&((*list)->head));
+    calculate_avg(list);
     fprintf(stdout, "Added)\n");
-    return *head;
+    return *list;
 }
 
-void print_students(STUDENT *head)
+void print_students(LIST *list)
 {
-    if(!head)
+    if(!(list->head))
     {
         fprintf(stderr, "List is empty\n");
         return;
     }
-    STUDENT *p = head;
+    STUDENT *p = list->head;
     print_head_of_table(NAME_LENGTH*2);
     while (p)
     {
@@ -221,13 +247,15 @@ void print_students(STUDENT *head)
     printf("\n");
 }
 
-void free_list(STUDENT *head)
+void free_list(LIST **list)
 {
     STUDENT *tmp;
-    while (head)
+    while ((*list)->head)
     {
-        tmp = head;
-        head = head->next;
+        tmp = (*list)->head;
+        (*list)->head = (*list)->head->next;
         free(tmp);
     }
+    free(*list);
+    *list = NULL;
 }
