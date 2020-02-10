@@ -53,12 +53,7 @@ STUDENT* sort_by_surname(STUDENT **head)
         {
             pp1=prev_student(*head,p1);
             pp2=prev_student(*head,p2);
-            i = 0;
-            while(p1->surname[i] < p2->surname[i] && p1->surname[i]!='\0' && p2->surname[i]!='\0')
-            {
-              ++i;
-            }
-            if(p1->surname[i] > p2->surname[i])
+            if(strcmp(p1->surname, p2->surname)>0)
             {
                 if(p1->next == p2)
                 {
