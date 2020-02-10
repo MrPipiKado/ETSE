@@ -1,5 +1,6 @@
 #ifndef ETSE_FUNCTIONS_H
 #define ETSE_FUNCTIONS_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -29,7 +30,7 @@ int check_input(char* input);
 STUDENT* create_list(char *input);
 STUDENT* add_student(STUDENT *head);
 STUDENT* delete_by_surname(STUDENT *head, char *surname);
-STUDENT* sort_by_surname(STUDENT *head);
+STUDENT* sort_by_surname(STUDENT **head);
 void print_students(STUDENT *head);
 void free_list(STUDENT *head);
 
