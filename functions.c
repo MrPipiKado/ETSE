@@ -1,20 +1,5 @@
 #include "functions.h"
 
-static STUDENT* find_max(STUDENT *head)
-{
-    STUDENT *max = head, *p;
-    char maax = head->surname[0];
-    for(p = head; p->next!=NULL; p = p->next)
-    {
-        if(p->surname[0]<maax)
-        {
-            maax = p->surname[0];
-            max = p;
-        }
-    }
-    return max;
-}
-
 static STUDENT* prev_student(STUDENT *head, STUDENT *puk)
 {
     if(puk==head)
@@ -98,7 +83,7 @@ STUDENT* sort_by_surname(STUDENT **head)
 
 STUDENT* delete_by_surname(STUDENT **head, char *surname)
 {
-    STUDENT *p = *head, *pp = NULL, *ph = *head;
+    STUDENT *p = *head, *pp = NULL;
     if(!strcmp((*head)->surname, surname))
     {
         *head = p->next;
@@ -178,6 +163,8 @@ STUDENT* add_student(STUDENT *head)
                 fprintf(stdout, "Enter fifth mark:");
                 scanf("%d", &(p_end->marks[4]));
                 break;
+            default:
+                fprintf(stdout, "Done.\n");
         }
         j++;
         if(j>MARK_4)break;
