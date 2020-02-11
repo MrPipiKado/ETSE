@@ -255,7 +255,7 @@ LIST* delete_less_then_avg(LIST **list)
         return *list;
     }
     STUDENT *p = (*list)->head, *pp = NULL;
-    float sum = 0.0f;
+    float sum;
     while(p)
     {
         sum = 0.0f;
