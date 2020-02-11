@@ -12,11 +12,8 @@ static LIST* calculate_avg_list(LIST **list)
     }
     while(p)
     {
-        for(int i = 0; i<MARKS_COUNT; ++i)
-        {
-            sum +=(float)(p->marks[i]);
-            ++count;
-        }
+        ++count;
+        sum+=p->avg;
         p = p->next;
     }
     (*list)->avg_mark = sum / (float)count;
@@ -25,6 +22,12 @@ static LIST* calculate_avg_list(LIST **list)
 
 static STUDENT* calculate_avg_student(STUDENT **student)
 {
+    float sum = 0.0f;
+    for (int i = 0; i<MARKS_COUNT; ++i)
+    {
+        sum+=(float)((*student)->marks[i]);
+    }
+    (*student)->avg = sum / MARKS_COUNT;
     return *student;
 }
 
@@ -212,6 +215,7 @@ LIST* add_student(LIST **list)
         j++;
         if(j>MARK_4)break;
     }
+    calculate_avg_student(&p_end);
     sort_by_surname(&((*list)->head));
     calculate_avg_list(list);
     fprintf(stdout, "Added)\n");
@@ -277,6 +281,11 @@ LIST* delete_less_then_avg(LIST **list)
         p = p->next;
     }
     calculate_avg_list(list);
+    return *list;
+}
+
+LIST* display_two_the_smartest(LIST ** list)
+{
     return *list;
 }
 
