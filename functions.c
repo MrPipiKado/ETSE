@@ -247,6 +247,35 @@ void print_students(LIST *list)
     printf("\n");
 }
 
+LIST* delete_less_then_avg(LIST **list)
+{
+    if(!((*list)->head))
+    {
+        fprintf(stderr, "List is empty\n");
+        return *list;
+    }
+    STUDENT *p = (*list)->head, *pp = NULL;
+    float sum = 0.0f;
+    while(p)
+    {
+        sum = 0.0f;
+        for(int i = 0; i<MARKS_COUNT; ++i)
+        {
+            sum += (float)p->marks[i];
+        }
+        if(sum<(*list)->avg_mark)
+        {
+            pp = prev_student((*list)->head, p);
+            pp->next = p->next;
+            free(p);
+            p=pp;
+        }
+        p = p->next;
+    }
+    calculate_avg(list);
+    return *list;
+}
+
 void free_list(LIST **list)
 {
     STUDENT *tmp;
