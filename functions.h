@@ -21,6 +21,7 @@ typedef struct student
     char name[NAME_LENGTH];
     BIRTHDAY date;
     int marks[MARKS_COUNT];
+    float avg;
     struct student *next;
 } STUDENT;
 

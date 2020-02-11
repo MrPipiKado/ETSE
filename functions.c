@@ -1,6 +1,6 @@
 #include "functions.h"
 
-static LIST* calculate_avg(LIST **list)
+static LIST* calculate_avg_list(LIST **list)
 {
     STUDENT *p = (*list)->head;
     int count = 0;
@@ -23,6 +23,10 @@ static LIST* calculate_avg(LIST **list)
     return *list;
 }
 
+static STUDENT* calculate_avg_student(STUDENT **student)
+{
+    return *student;
+}
 
 static STUDENT* prev_student(STUDENT *head, STUDENT *puk)
 {
@@ -117,7 +121,7 @@ LIST* delete_by_surname(LIST **list, char *surname)
     {
         (*list)->head = p->next;
         free(p);
-        calculate_avg(list);
+        calculate_avg_list(list);
         return *list;
     }
     p = (*list)->head;
@@ -128,7 +132,7 @@ LIST* delete_by_surname(LIST **list, char *surname)
             pp = prev_student((*list)->head, p);
             pp->next = p->next;
             free(p);
-            calculate_avg(list);
+            calculate_avg_list(list);
             return *list;
         }
         p = p->next;
@@ -209,7 +213,7 @@ LIST* add_student(LIST **list)
         if(j>MARK_4)break;
     }
     sort_by_surname(&((*list)->head));
-    calculate_avg(list);
+    calculate_avg_list(list);
     fprintf(stdout, "Added)\n");
     return *list;
 }
@@ -272,7 +276,7 @@ LIST* delete_less_then_avg(LIST **list)
         }
         p = p->next;
     }
-    calculate_avg(list);
+    calculate_avg_list(list);
     return *list;
 }
 
