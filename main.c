@@ -6,6 +6,8 @@ int main()
     LIST *students_list = (LIST*)malloc(sizeof(LIST));
     students_list->head = NULL;
     students_list->avg_mark = 0.0f;
+    students_list->max_name_length = 0;
+    students_list->max_surname_length = 0;
     int option = 0, sorted = 1;
     char surname[NAME_LENGTH];
     print_students(students_list);

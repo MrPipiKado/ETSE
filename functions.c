@@ -1,5 +1,14 @@
 #include "functions.h"
 
+static void change_fields_length(LIST **list, STUDENT *student)
+{
+    if(strlen(student->name)>(*list)->max_name_length)
+        (*list)->max_name_length = strlen(student->name);
+    if(strlen(student->surname)>(*list)->max_surname_length)
+        (*list)->max_surname_length = strlen(student->surname);
+}
+
+
 static LIST* calculate_avg_list(LIST **list)
 {
     STUDENT *p = (*list)->head;
@@ -54,18 +63,23 @@ static int print_line(char ch, int n)
     return 0;
 }
 
-static int print_head_of_table(int length)
+static int print_head_of_table(int surname, int name)
 {
-    int puk = (length + 7)*2;
-    print_line('_', puk);
-    fprintf(stdout, "|   NAME   | ");
-    fprintf(stdout, "|  SURNAME | ");
+    print_line('_', surname+name+3+3+5+5+7+11);
+
+    fprintf(stdout, "|SURNAME");
+    for(int i=7;i<surname;++i)
+        fprintf(stdout, " ");
+    fprintf(stdout, "| ");
+    fprintf(stdout, "|NAME");
+    for(int i=4;i<name;++i)
+        fprintf(stdout, " ");
+    fprintf(stdout, "| ");
     fprintf(stdout, "|DT| ");
     fprintf(stdout, "|MN| ");
     fprintf(stdout, "|YEAR| ");
     fprintf(stdout, "|  MARKS  |\n");
-    puk = (length + 7)*2;
-    print_line('-', puk);
+    print_line('_', surname+name+3+3+5+5+7+11);
     return 0;
 }
 
@@ -77,7 +91,6 @@ STUDENT* sort_by_surname(STUDENT **head)
         return *head;
     }
     STUDENT *p1 ,*p2 , *pp1 , *pp2 , *tmp ;
-    int i;
     for(p1=*head; p1->next; p1=p1->next )
     {
         for(p2=p1->next; p2 ; p2=p2->next)
@@ -218,6 +231,7 @@ LIST* add_student(LIST **list)
     calculate_avg_student(&p_end);
     sort_by_surname(&((*list)->head));
     calculate_avg_list(list);
+    change_fields_length(list, p_end);
     fprintf(stdout, "Added)\n");
     return *list;
 }
@@ -230,13 +244,17 @@ void print_students(LIST *list)
         return;
     }
     STUDENT *p = list->head;
-    print_head_of_table(NAME_LENGTH*2);
+    print_head_of_table(list->max_surname_length, list->max_name_length);
     while (p)
     {
         fprintf(stdout, "|");
-        fprintf(stdout, "%-*s",NAME_LENGTH, p->surname);
+        fprintf(stdout, "%-*s",list->max_surname_length, p->surname);
+        for(int i = (int)strlen(p->surname); i<7; ++i)
+            fprintf(stdout, " ");
         fprintf(stdout, "| |");
-        fprintf(stdout, "%-*s",NAME_LENGTH, p->name);
+        fprintf(stdout, "%-*s",list->max_name_length, p->name);
+        for(int i = (int)strlen(p->name); i<4; ++i)
+            fprintf(stdout, " ");
         fprintf(stdout, "| |");
         fprintf(stdout, "%02d", p->date.day);
         fprintf(stdout, "| |");
@@ -286,6 +304,22 @@ LIST* delete_less_then_avg(LIST **list)
 
 LIST* display_two_the_smartest(LIST ** list)
 {
+    STUDENT *max_avg_1, *max_avg_2;
+    max_avg_1 = (STUDENT *)malloc(sizeof(STUDENT));
+    max_avg_2 = (STUDENT *)malloc(sizeof(STUDENT));
+    STUDENT *p = (*list)->head;
+    if(!((*list)->head))
+    {
+        fprintf(stderr, "List is empty\n");
+        return *list;
+    }
+    while(p)
+    {
+        
+        p = p->next;
+    }
+    free(max_avg_1);
+    free(max_avg_2);
     return *list;
 }
 

@@ -1,7 +1,7 @@
 #ifndef ETSE_FUNCTIONS_H
 #define ETSE_FUNCTIONS_H
 
-#define NAME_LENGTH 10
+#define NAME_LENGTH 25
 #define MARKS_COUNT 5
 
 #include <stdio.h>
@@ -28,6 +28,8 @@ typedef struct student
 typedef struct list
 {
     STUDENT *head;
+    unsigned short max_name_length;
+    unsigned short max_surname_length;
     float avg_mark;
 }LIST;
 
