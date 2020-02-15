@@ -1,5 +1,22 @@
 #include "functions.h"
 
+static int list_size(LIST *list)
+{
+    int count = 0;
+    if(!list)
+    {
+        fprintf(stderr, "List is empty\n");
+        return -1;
+    }
+    STUDENT *p = list->head;
+    while(p)
+    {
+        ++count;
+        p = p->next;
+    }
+    return count;
+}
+
 static void change_fields_length(LIST **list, STUDENT *student)
 {
     if(strlen(student->name)>(*list)->max_name_length)
@@ -249,12 +266,8 @@ void print_students(LIST *list)
     {
         fprintf(stdout, "|");
         fprintf(stdout, "%-*s",list->max_surname_length, p->surname);
-        for(int i = (int)strlen(p->surname); i<7; ++i)
-            fprintf(stdout, " ");
         fprintf(stdout, "| |");
         fprintf(stdout, "%-*s",list->max_name_length, p->name);
-        for(int i = (int)strlen(p->name); i<4; ++i)
-            fprintf(stdout, " ");
         fprintf(stdout, "| |");
         fprintf(stdout, "%02d", p->date.day);
         fprintf(stdout, "| |");
@@ -289,6 +302,7 @@ LIST* delete_less_then_avg(LIST **list)
         {
             sum += (float)p->marks[i];
         }
+        sum/=MARKS_COUNT;
         if(sum<(*list)->avg_mark)
         {
             pp = prev_student((*list)->head, p);
@@ -304,22 +318,46 @@ LIST* delete_less_then_avg(LIST **list)
 
 LIST* display_two_the_smartest(LIST ** list)
 {
-    STUDENT *max_avg_1, *max_avg_2;
-    max_avg_1 = (STUDENT *)malloc(sizeof(STUDENT));
-    max_avg_2 = (STUDENT *)malloc(sizeof(STUDENT));
-    STUDENT *p = (*list)->head;
-    if(!((*list)->head))
+
+    if(list_size(*list)<3)
     {
-        fprintf(stderr, "List is empty\n");
+        print_students(*list);
         return *list;
     }
+    STUDENT *max_avg_1 = (*list)->head, *max_avg_2 = max_avg_1->next;
+    STUDENT *p = max_avg_2->next;
+
     while(p)
     {
-        
+        if(p->avg > max_avg_1->avg)
+        {
+            max_avg_1 = p;
+        }
         p = p->next;
     }
-    free(max_avg_1);
-    free(max_avg_2);
+    p = (*list)->head;
+    while(p)
+    {
+        if(p->avg > max_avg_2->avg && p!=max_avg_1)
+        {
+            max_avg_2 = p;
+        }
+        p = p->next;
+    }
+    STUDENT *pp1 = (STUDENT*)malloc(sizeof(STUDENT));
+    STUDENT *pp2 = (STUDENT*)malloc(sizeof(STUDENT));
+    *pp1 = *max_avg_1;
+    *pp2 = *max_avg_2;
+    pp1->next = pp2;
+    pp2->next = NULL;
+    LIST *list1 = (LIST*)malloc(sizeof(LIST));
+    list1->head=pp1;
+    list1->max_name_length = 0;
+    list1->max_surname_length = 0;
+    change_fields_length(&list1, pp1);
+    change_fields_length(&list1, pp2);
+    print_students(list1);
+    free_list(&list1);
     return *list;
 }
 

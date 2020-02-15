@@ -14,8 +14,13 @@ int main()
     do
     {
 
-        printf("Choose option:\n1 - Sort\n2 - Delete student by surname\n"
-               "3 - Add student\n0 - Exit\nOption:");
+        printf("Choose option:\n"
+               "1 - Sort\n"
+               "2 - Delete student by surname\n"
+               "3 - Delete students with  less then avarage mark\n"
+               "4 - Add student\n"
+               "5 - Display two the smartest\n"
+               "0 - Exit\nOption:");
         if(!scanf("%d", &option))break;
         if(!option)break;
         if(option==1)
@@ -32,7 +37,15 @@ int main()
         }
         if(option==3)
         {
+            delete_less_then_avg(&students_list);
+        }
+        if(option==4)
+        {
             add_student(&students_list);
+        }
+        if(option==5)
+        {
+            display_two_the_smartest(&students_list);
         }
         print_students(students_list);
     }while(1);
