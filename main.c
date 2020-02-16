@@ -20,6 +20,7 @@ int main()
                "3 - Delete students with  less then avarage mark\n"
                "4 - Add student\n"
                "5 - Display two the smartest\n"
+               "6 - Read from file\n"
                "0 - Exit\nOption:");
         if(!scanf("%d", &option))break;
         if(!option)break;
@@ -46,6 +47,10 @@ int main()
         if(option==5)
         {
             display_two_the_smartest(&students_list);
+        }
+        if(option==6)
+        {
+            read_from_file(&students_list);
         }
         print_students(students_list);
     }while(1);

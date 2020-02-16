@@ -361,6 +361,60 @@ LIST* display_two_the_smartest(LIST ** list)
     return *list;
 }
 
+void read_from_file(LIST **list)
+{
+    char ch;
+    char path[100];
+    STUDENT*p;
+
+    fprintf(stdout, "Do you want to read from default file?(y/n):\n");
+    fscanf(stdin,"%c", &ch);
+    if (ch == 'n')
+    {
+        fprintf(stdout, "Enter full path to file:");
+        scanf("%s", path);
+    }
+    else
+    {
+        strcpy(path, "/home/user/Desktop/ETSE/input.txt");
+    }
+    FILE *input = fopen(path, "rt");
+    if (input == NULL)
+    {
+        fprintf(stderr, "Cant open file\n");
+        return;
+    }
+
+    LIST *temp = NULL;
+
+    while (!feof(input))
+    {
+        STUDENT *new_st = (STUDENT *) malloc(sizeof(STUDENT));
+        if (!new_st) {
+            fprintf(stderr, "can not allocate \n");
+            return;
+        }
+        fscanf(input, "%s %s", new_st->surname, new_st->name);
+        fscanf(input, "%d.%d.%d", &(new_st->date.day), &(new_st->date.month), &(new_st->date.year));
+        fscanf(input, "%d %d %d %d %d", new_st->marks, new_st->marks + 1, new_st->marks + 2, new_st->marks + 3,
+               new_st->marks + 4);
+        new_st->next = NULL;
+        calculate_avg_student(&new_st);
+        if(!((*list)->head))
+        {
+            (*list)->head = new_st;
+        }
+        else
+        {
+            p = (*list)->head;
+            for(;p->next;p=p->next);
+            p->next = new_st;
+        }
+        change_fields_length(list, new_st);
+    }
+    calculate_avg_list(list);
+}
+
 void free_list(LIST **list)
 {
     STUDENT *tmp;
