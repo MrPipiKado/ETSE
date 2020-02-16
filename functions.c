@@ -193,51 +193,87 @@ LIST* add_student(LIST **list)
         fprintf(stderr, "Can not allocate so much memory");
         return *list;
     }
-
+    int ok = 0;
     int j = 0;
     while (1)
     {
         switch (j)
         {
             case SURNAME:
-                fprintf(stdout, "Enter surname:");
-                scanf("%s", p_end->surname);
+                while(!ok)
+                {
+                    ok = 1;
+                    fprintf(stdout, "Enter surname:");
+                    scanf("%s", p_end->surname);
+                    for(int i = 0;p_end->surname[i]!='\0';++i)
+                    {
+                        if(!isalpha(p_end->surname[i]))
+                            ok = 0;
+                    }
+                }
+                ok = 0;
                 break;
             case NAME:
-                fprintf(stdout, "Enter name:");
-                scanf("%s", p_end->name);
+                while(!ok)
+                {
+                    ok = 1;
+                    fprintf(stdout, "Enter name:");
+                    scanf("%s", p_end->name);
+                    for(int i = 0;p_end->name[i]!='\0';++i)
+                    {
+                        if(!isalpha(p_end->name[i]))
+                            ok = 0;
+                    }
+                }
+                getchar();
                 break;
             case DAY:
-                fprintf(stdout, "Enter day of birth:");
-                scanf("%d", &(p_end->date.day));
+                do
+                {
+                    p_end->date.day = get_int("Enter day of birth:");
+                }while(p_end->date.day <0 || p_end->date.day>31);
                 break;
             case MONTH:
-                fprintf(stdout, "Enter month of birth:");
-                scanf("%d", &(p_end->date.month));
+                do
+                {
+                    p_end->date.month = get_int("Enter month of birth:");
+                }while(p_end->date.month <0 || p_end->date.month>12);
                 break;
             case YEAR:
-                fprintf(stdout, "Enter year of birth:");
-                scanf("%d", &(p_end->date.year));
+                do
+                {
+                    p_end->date.year = get_int("Enter year of birth:");
+                }while(p_end->date.year <1900 || p_end->date.year>2020);
                 break;
             case MARK_0:
-                fprintf(stdout, "Enter first mark:");
-                scanf("%d", &(p_end->marks[0]));
+                do
+                {
+                    p_end->marks[0] = get_int("Enter first mark:");
+                }while(p_end->marks[0]<0 || p_end->marks[0]>5);
                 break;
             case MARK_1:
-                fprintf(stdout, "Enter second mark:");
-                scanf("%d", &(p_end->marks[1]));
+                do
+                {
+                    p_end->marks[1] = get_int("Enter second mark:");
+                }while(p_end->marks[1]<0 || p_end->marks[1]>5);
                 break;
             case MARK_2:
-                fprintf(stdout, "Enter third mark:");
-                scanf("%d", &(p_end->marks[2]));
+                do
+                {
+                    p_end->marks[2] = get_int("Enter third mark:");
+                }while(p_end->marks[2]<0 || p_end->marks[2]>5);
                 break;
             case MARK_3:
-                fprintf(stdout, "Enter fourth mark:");
-                scanf("%d", &(p_end->marks[3]));
+                do
+                {
+                    p_end->marks[3] = get_int("Enter fourth mark:");
+                }while(p_end->marks[3]<0 || p_end->marks[3]>5);
                 break;
             case MARK_4:
-                fprintf(stdout, "Enter fifth mark:");
-                scanf("%d", &(p_end->marks[4]));
+                do
+                {
+                    p_end->marks[4] = get_int("Enter fifth mark:");
+                }while(p_end->marks[4]<0 || p_end->marks[4]>5);
                 break;
             default:
                 fprintf(stdout, "Done.\n");
@@ -396,8 +432,8 @@ void read_from_file(LIST **list)
         }
         fscanf(input, "%s %s", new_st->surname, new_st->name);
         fscanf(input, "%d.%d.%d", &(new_st->date.day), &(new_st->date.month), &(new_st->date.year));
-        fscanf(input, "%d %d %d %d %d", new_st->marks, new_st->marks + 1, new_st->marks + 2, new_st->marks + 3,
-               new_st->marks + 4);
+        fscanf(input, "%d %d %d %d %d", new_st->marks, new_st->marks + 1,
+                new_st->marks + 2, new_st->marks + 3,new_st->marks + 4);
         new_st->next = NULL;
         calculate_avg_student(&new_st);
         if(!((*list)->head))

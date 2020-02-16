@@ -21,8 +21,8 @@ int main()
                "4 - Add student\n"
                "5 - Display two the smartest\n"
                "6 - Read from file\n"
-               "0 - Exit\nOption:");
-        if(!scanf("%d", &option))break;
+               "0 - Exit\n");
+        option = get_int("Option:");
         if(!option)break;
         if(option==1)
             if(sorted)
