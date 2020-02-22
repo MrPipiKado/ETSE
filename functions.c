@@ -322,6 +322,72 @@ void print_students(LIST *list)
     printf("\n");
 }
 
+void print_students_to_file(LIST *list)
+{
+    fprintf(stdout, "Enter full path to file");
+    char file_name[100];
+    scanf("%s", file_name);
+    FILE *file = fopen(file_name, "wt");
+    if(!file)
+    {
+        fprintf(stderr, "Can not open file\n");
+        return;
+    }
+    else
+    {
+        STUDENT *p = list->head;
+        int n =list->max_surname_length+list->max_name_length+3+3+5+5+7+11;
+        while(n)
+        {
+            fprintf(file, "%c", '_');
+            n--;
+        }
+        fprintf(file, "\n");
+
+        fprintf(file, "|SURNAME");
+        for(int i=7;i<list->max_surname_length;++i)
+            fprintf(file, " ");
+        fprintf(file, "| ");
+        fprintf(file, "|NAME");
+        for(int i=4;i<list->max_name_length;++i)
+            fprintf(file, " ");
+        fprintf(file, "| ");
+        fprintf(file, "|DT| ");
+        fprintf(file, "|MN| ");
+        fprintf(file, "|YEAR| ");
+        fprintf(file, "|  MARKS  |\n");
+
+        n =list->max_surname_length+list->max_name_length+3+3+5+5+7+11;
+        while(n)
+        {
+            fprintf(file, "%c", '_');
+            n--;
+        }
+        fprintf(file, "\n");
+        while (p)
+        {
+            fprintf(file, "|");
+            fprintf(file, "%-*s",list->max_surname_length, p->surname);
+            fprintf(file, "| |");
+            fprintf(file, "%-*s",list->max_name_length, p->name);
+            fprintf(file, "| |");
+            fprintf(file, "%02d", p->date.day);
+            fprintf(file, "| |");
+            fprintf(file, "%02d", p->date.month);
+            fprintf(file, "| |");
+            fprintf(file, "%-4d", p->date.year);
+            fprintf(file, "| |");
+            for(int k=0; k<MARKS_COUNT; ++k)
+            {
+                fprintf(file, "%1d", p->marks[k]);
+                fprintf(file, "|");
+            }
+            fprintf(file, "\n");
+            p = p->next;
+        }
+    }
+}
+
 LIST* delete_less_then_avg(LIST **list)
 {
     if(!((*list)->head))

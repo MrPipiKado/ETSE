@@ -45,6 +45,7 @@ LIST* delete_less_then_avg(LIST **list);
 LIST* display_two_the_smartest(LIST ** list);
 STUDENT* sort_by_surname(STUDENT **head);
 void print_students(LIST *list);
+void print_students_to_file(LIST *list);
 void read_from_file(LIST **list);
 void free_list(LIST **list);
 

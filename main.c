@@ -21,6 +21,7 @@ int main()
                "4 - Add student\n"
                "5 - Display two the smartest\n"
                "6 - Read from file\n"
+               "7 - Write to file\n"
                "0 - Exit\n");
         option = get_int("Option:");
         if(!option)break;
@@ -51,6 +52,10 @@ int main()
         if(option==6)
         {
             read_from_file(&students_list);
+        }
+        if(option==7)
+        {
+            print_students_to_file(students_list);
         }
         print_students(students_list);
     }while(1);
