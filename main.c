@@ -9,7 +9,7 @@ int main()
     pStudentsList->m_usMaxNameLength = 0;
     pStudentsList->m_usMaxSurnameLength = 0;
     int iOption = 0, iSorted = 1;
-    char surname[NAME_LENGTH];
+    char pszSurname[NAME_LENGTH];
     showStudentsOnScreen(pStudentsList);
     do
     {
@@ -34,8 +34,8 @@ int main()
         if(iOption == 2)
         {
             printf("Enter surname:");
-            scanf("%s", surname);
-            deleteStudentBySurname(&pStudentsList, surname);
+            scanf("%s", pszSurname);
+            deleteStudentBySurname(&pStudentsList, pszSurname);
         }
         if(iOption == 3)
         {
