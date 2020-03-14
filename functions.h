@@ -12,9 +12,9 @@
 
 typedef struct birthday
 {
-    int day;
-    int month;
-    int year;
+    int iDay;
+    int iMonth;
+    int iYear;
 } BIRTHDAY;
 
 typedef struct student
