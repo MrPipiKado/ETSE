@@ -1,197 +1,199 @@
 #include "functions.h"
 
-static int list_size(LIST *list)
+static int getListSize(SLIST* pList)
 {
     int count = 0;
-    if(!list)
+    if(!pList)
     {
         fprintf(stderr, "List is empty\n");
         return -1;
     }
-    STUDENT *p = list->head;
+    SSTUDENT *p = pList->m_pHead;
     while(p)
     {
         ++count;
-        p = p->next;
+        p = p->m_pNext;
     }
     return count;
 }
 
-static void change_fields_length(LIST **list, STUDENT *student)
+static void changeFieldsLength(SLIST** pList, SSTUDENT* pStudent)
 {
-    if(strlen(student->name)>(*list)->max_name_length)
-        (*list)->max_name_length = strlen(student->name);
-    if(strlen(student->surname)>(*list)->max_surname_length)
-        (*list)->max_surname_length = strlen(student->surname);
+    if(strlen(pStudent->m_szName) > (*pList)->m_usMaxNameLength)
+        (*pList)->m_usMaxNameLength = strlen(pStudent->m_szName);
+    if(strlen(pStudent->m_szSurname) > (*pList)->m_usMaxSurnameLength)
+        (*pList)->m_usMaxSurnameLength = strlen(pStudent->m_szSurname);
 }
 
 
-static LIST* calculate_avg_list(LIST **list)
+static SLIST* calculateAverageMarkInList(SLIST** pList)
 {
-    STUDENT *p = (*list)->head;
+    SSTUDENT *p = (*pList)->m_pHead;
     int count = 0;
     float sum = 0.0f;
     if(!p)
     {
         fprintf(stderr, "List is empty\n");
-        return *list;
+        return *pList;
     }
     while(p)
     {
         ++count;
-        sum+=p->avg;
-        p = p->next;
+        sum+=p->m_fAverageMark;
+        p = p->m_pNext;
     }
-    (*list)->avg_mark = sum / (float)count;
-    return *list;
+    (*pList)->m_fAverageMark = sum / (float)count;
+    return *pList;
 }
 
-static STUDENT* calculate_avg_student(STUDENT **student)
+static SSTUDENT* calculateAverageMarkOfStudent(SSTUDENT** ppStudent)
 {
     float sum = 0.0f;
     for (int i = 0; i<MARKS_COUNT; ++i)
     {
-        sum+=(float)((*student)->marks[i]);
+        sum+=(float)((*ppStudent)->m_iMarks[i]);
     }
-    (*student)->avg = sum / MARKS_COUNT;
-    return *student;
+    (*ppStudent)->m_fAverageMark = sum / MARKS_COUNT;
+    return *ppStudent;
 }
 
-static STUDENT* prev_student(STUDENT *head, STUDENT *puk)
+static SSTUDENT* getPreviousStudent(SSTUDENT* pHead, SSTUDENT* pCurrent)
 {
-    if(puk==head)
+    if(pCurrent == pHead)
         return NULL;
     else
     {
-        STUDENT *kaka;
-        for(kaka = head; kaka->next!=puk; kaka = kaka->next);
-        return kaka;
+        SSTUDENT *p;
+        for(p = pHead; p->m_pNext != pCurrent; p = p->m_pNext);
+        return p;
     }
 }
 
-static int print_line(char ch, int n)
+static int printLineOnScreen(char ch, int iCount)
 {
-    while(n)
+    while(iCount)
     {
         fprintf(stdout, "%c", ch);
-        n--;
+        iCount--;
     }
     fprintf(stdout, "\n");
     return 0;
 }
 
-static int print_head_of_table(int surname, int name)
+static int printHeadOfTableOnScreen(int iSurnameLength, int iNameLength)
 {
-    print_line('_', surname+name+3+3+5+5+7+11);
+    printLineOnScreen('_', iSurnameLength + iNameLength
+                           + 3 + 3 + 5 + 5 + 7 + 11);
 
     fprintf(stdout, "|SURNAME");
-    for(int i=7;i<surname;++i)
+    for(int i=7; i < iSurnameLength; ++i)
         fprintf(stdout, " ");
     fprintf(stdout, "| ");
     fprintf(stdout, "|NAME");
-    for(int i=4;i<name;++i)
+    for(int i=4; i < iNameLength; ++i)
         fprintf(stdout, " ");
     fprintf(stdout, "| ");
     fprintf(stdout, "|DT| ");
     fprintf(stdout, "|MN| ");
     fprintf(stdout, "|YEAR| ");
     fprintf(stdout, "|  MARKS  |\n");
-    print_line('_', surname+name+3+3+5+5+7+11);
+    printLineOnScreen('_', iSurnameLength + iNameLength
+                           + 3 + 3 + 5 + 5 + 7 + 11);
     return 0;
 }
 
-STUDENT* sort_by_surname(STUDENT **head)
+SSTUDENT* sortStudentsBySurname(SSTUDENT** ppHead)
 {
-    if(!(*head))
+    if(!(*ppHead))
     {
         fprintf(stderr, "List is empty\n");
-        return *head;
+        return *ppHead;
     }
-    STUDENT *p1 ,*p2 , *pp1 , *pp2 , *tmp ;
-    for(p1=*head; p1->next; p1=p1->next )
+    SSTUDENT *p1 ,*p2 , *pp1 , *pp2 , *tmp ;
+    for(p1=*ppHead; p1->m_pNext; p1=p1->m_pNext )
     {
-        for(p2=p1->next; p2 ; p2=p2->next)
+        for(p2=p1->m_pNext; p2 ; p2=p2->m_pNext)
         {
-            pp1=prev_student(*head,p1);
-            pp2=prev_student(*head,p2);
-            if(strcmp(p1->surname, p2->surname)>0)
+            pp1= getPreviousStudent(*ppHead, p1);
+            pp2= getPreviousStudent(*ppHead, p2);
+            if(strcmp(p1->m_szSurname, p2->m_szSurname) > 0)
             {
-                if(p1->next == p2)
+                if(p1->m_pNext == p2)
                 {
-                    tmp = p2->next;
-                    p2->next = p1;
-                    p1->next = tmp;
+                    tmp = p2->m_pNext;
+                    p2->m_pNext = p1;
+                    p1->m_pNext = tmp;
                 }
                 else
                 {
-                    tmp = p2->next;
-                    p2->next = p1->next;
-                    p1->next = tmp;
-                    pp2->next = p1;
+                    tmp = p2->m_pNext;
+                    p2->m_pNext = p1->m_pNext;
+                    p1->m_pNext = tmp;
+                    pp2->m_pNext = p1;
                 }
                 if(!pp1)
-                    *head = p2;
+                    *ppHead = p2;
                 else
-                    pp1->next = p2;
+                    pp1->m_pNext = p2;
                 tmp = p1;
                 p1 = p2;
                 p2 = tmp;
             }
         }
     }
-    return *head;
+    return *ppHead;
 }
 
-LIST* delete_by_surname(LIST **list, char *surname)
+SLIST* deleteStudentBySurname(SLIST** ppList, char* pszSurname)
 {
-    STUDENT *p = (*list)->head, *pp = NULL;
+    SSTUDENT *p = (*ppList)->m_pHead, *pp = NULL;
     if(!(p))
     {
         fprintf(stderr, "List is empty\n");
-        return *list;
+        return *ppList;
     }
-    if(!strcmp(((*list)->head)->surname, surname))
+    if(!strcmp(((*ppList)->m_pHead)->m_szSurname, pszSurname))
     {
-        (*list)->head = p->next;
+        (*ppList)->m_pHead = p->m_pNext;
         free(p);
-        calculate_avg_list(list);
-        return *list;
+        calculateAverageMarkInList(ppList);
+        return *ppList;
     }
-    p = (*list)->head;
+    p = (*ppList)->m_pHead;
     while(p)
     {
-        if(!strcmp(((*list)->head)->surname, surname))
+        if(!strcmp(((*ppList)->m_pHead)->m_szSurname, pszSurname))
         {
-            pp = prev_student((*list)->head, p);
-            pp->next = p->next;
+            pp = getPreviousStudent((*ppList)->m_pHead, p);
+            pp->m_pNext = p->m_pNext;
             free(p);
-            calculate_avg_list(list);
-            return *list;
+            calculateAverageMarkInList(ppList);
+            return *ppList;
         }
-        p = p->next;
+        p = p->m_pNext;
     }
-    fprintf(stdout, "Can not find %s", surname);
-    return *list;
+    fprintf(stdout, "Can not find %s", pszSurname);
+    return *ppList;
 }
 
-LIST* add_student(LIST **list)
+SLIST* addStudent(SLIST** ppHead)
 {
-    STUDENT *p_end;
-    if(!((*list)->head))
+    SSTUDENT *p_end;
+    if(!((*ppHead)->m_pHead))
     {
-        p_end = (STUDENT*)malloc(sizeof(STUDENT));
-        (*list)->head = p_end;
+        p_end = (SSTUDENT*)malloc(sizeof(SSTUDENT));
+        (*ppHead)->m_pHead = p_end;
     }
     else
     {
-        for (p_end = (*list)->head; p_end->next != NULL; p_end = p_end->next);
-        p_end->next = (STUDENT *) malloc(sizeof(STUDENT));
-        p_end = p_end->next;
+        for (p_end = (*ppHead)->m_pHead; p_end->m_pNext != NULL; p_end = p_end->m_pNext);
+        p_end->m_pNext = (SSTUDENT *) malloc(sizeof(SSTUDENT));
+        p_end = p_end->m_pNext;
     }
     if(!(p_end))
     {
         fprintf(stderr, "Can not allocate so much memory");
-        return *list;
+        return *ppHead;
     }
     int ok = 0;
     int j = 0;
@@ -203,11 +205,11 @@ LIST* add_student(LIST **list)
                 while(!ok)
                 {
                     ok = 1;
-                    fprintf(stdout, "Enter surname:");
-                    scanf("%s", p_end->surname);
-                    for(int i = 0;p_end->surname[i]!='\0';++i)
+                    fprintf(stdout, "Enter m_szSurname:");
+                    scanf("%s", p_end->m_szSurname);
+                    for(int i = 0; p_end->m_szSurname[i] != '\0'; ++i)
                     {
-                        if(!isalpha(p_end->surname[i]))
+                        if(!isalpha(p_end->m_szSurname[i]))
                             ok = 0;
                     }
                 }
@@ -217,11 +219,11 @@ LIST* add_student(LIST **list)
                 while(!ok)
                 {
                     ok = 1;
-                    fprintf(stdout, "Enter name:");
-                    scanf("%s", p_end->name);
-                    for(int i = 0;p_end->name[i]!='\0';++i)
+                    fprintf(stdout, "Enter m_szName:");
+                    scanf("%s", p_end->m_szName);
+                    for(int i = 0; p_end->m_szName[i] != '\0'; ++i)
                     {
-                        if(!isalpha(p_end->name[i]))
+                        if(!isalpha(p_end->m_szName[i]))
                             ok = 0;
                     }
                 }
@@ -248,32 +250,32 @@ LIST* add_student(LIST **list)
             case MARK_0:
                 do
                 {
-                    p_end->marks[0] = get_int("Enter first mark:");
-                }while(p_end->marks[0]<0 || p_end->marks[0]>5);
+                    p_end->m_iMarks[0] = get_int("Enter first mark:");
+                }while(p_end->m_iMarks[0] < 0 || p_end->m_iMarks[0] > 5);
                 break;
             case MARK_1:
                 do
                 {
-                    p_end->marks[1] = get_int("Enter second mark:");
-                }while(p_end->marks[1]<0 || p_end->marks[1]>5);
+                    p_end->m_iMarks[1] = get_int("Enter second mark:");
+                }while(p_end->m_iMarks[1] < 0 || p_end->m_iMarks[1] > 5);
                 break;
             case MARK_2:
                 do
                 {
-                    p_end->marks[2] = get_int("Enter third mark:");
-                }while(p_end->marks[2]<0 || p_end->marks[2]>5);
+                    p_end->m_iMarks[2] = get_int("Enter third mark:");
+                }while(p_end->m_iMarks[2] < 0 || p_end->m_iMarks[2] > 5);
                 break;
             case MARK_3:
                 do
                 {
-                    p_end->marks[3] = get_int("Enter fourth mark:");
-                }while(p_end->marks[3]<0 || p_end->marks[3]>5);
+                    p_end->m_iMarks[3] = get_int("Enter fourth mark:");
+                }while(p_end->m_iMarks[3] < 0 || p_end->m_iMarks[3] > 5);
                 break;
             case MARK_4:
                 do
                 {
-                    p_end->marks[4] = get_int("Enter fifth mark:");
-                }while(p_end->marks[4]<0 || p_end->marks[4]>5);
+                    p_end->m_iMarks[4] = get_int("Enter fifth mark:");
+                }while(p_end->m_iMarks[4] < 0 || p_end->m_iMarks[4] > 5);
                 break;
             default:
                 fprintf(stdout, "Done.\n");
@@ -281,29 +283,29 @@ LIST* add_student(LIST **list)
         j++;
         if(j>MARK_4)break;
     }
-    calculate_avg_student(&p_end);
-    sort_by_surname(&((*list)->head));
-    calculate_avg_list(list);
-    change_fields_length(list, p_end);
+    calculateAverageMarkOfStudent(&p_end);
+    sortStudentsBySurname(&((*ppHead)->m_pHead));
+    calculateAverageMarkInList(ppHead);
+    changeFieldsLength(ppHead, p_end);
     fprintf(stdout, "Added)\n");
-    return *list;
+    return *ppHead;
 }
 
-void print_students(LIST *list)
+void showStudentsOnScreen(SLIST* pList)
 {
-    if(!(list->head))
+    if(!(pList->m_pHead))
     {
         fprintf(stderr, "List is empty\n");
         return;
     }
-    STUDENT *p = list->head;
-    print_head_of_table(list->max_surname_length, list->max_name_length);
+    SSTUDENT *p = pList->m_pHead;
+    printHeadOfTableOnScreen(pList->m_usMaxSurnameLength, pList->m_usMaxNameLength);
     while (p)
     {
         fprintf(stdout, "|");
-        fprintf(stdout, "%-*s",list->max_surname_length, p->surname);
+        fprintf(stdout, "%-*s", pList->m_usMaxSurnameLength, p->m_szSurname);
         fprintf(stdout, "| |");
-        fprintf(stdout, "%-*s",list->max_name_length, p->name);
+        fprintf(stdout, "%-*s", pList->m_usMaxNameLength, p->m_szName);
         fprintf(stdout, "| |");
         fprintf(stdout, "%02d", p->date.day);
         fprintf(stdout, "| |");
@@ -313,16 +315,16 @@ void print_students(LIST *list)
         fprintf(stdout, "| |");
         for(int k=0; k<MARKS_COUNT; ++k)
         {
-            fprintf(stdout, "%1d", p->marks[k]);
+            fprintf(stdout, "%1d", p->m_iMarks[k]);
             fprintf(stdout, "|");
         }
         fprintf(stdout, "\n");
-        p = p->next;
+        p = p->m_pNext;
     }
     printf("\n");
 }
 
-void print_students_to_file(LIST *list)
+void saveStudentsToFile(SLIST* pList)
 {
     fprintf(stdout, "Enter full path to file");
     char file_name[100];
@@ -335,8 +337,8 @@ void print_students_to_file(LIST *list)
     }
     else
     {
-        STUDENT *p = list->head;
-        int n =list->max_surname_length+list->max_name_length+3+3+5+5+7+11;
+        SSTUDENT *p = pList->m_pHead;
+        int n = pList->m_usMaxSurnameLength + pList->m_usMaxNameLength + 3 + 3 + 5 + 5 + 7 + 11;
         while(n)
         {
             fprintf(file, "%c", '_');
@@ -345,11 +347,11 @@ void print_students_to_file(LIST *list)
         fprintf(file, "\n");
 
         fprintf(file, "|SURNAME");
-        for(int i=7;i<list->max_surname_length;++i)
+        for(int i=7; i < pList->m_usMaxSurnameLength; ++i)
             fprintf(file, " ");
         fprintf(file, "| ");
         fprintf(file, "|NAME");
-        for(int i=4;i<list->max_name_length;++i)
+        for(int i=4; i < pList->m_usMaxNameLength; ++i)
             fprintf(file, " ");
         fprintf(file, "| ");
         fprintf(file, "|DT| ");
@@ -357,7 +359,7 @@ void print_students_to_file(LIST *list)
         fprintf(file, "|YEAR| ");
         fprintf(file, "|  MARKS  |\n");
 
-        n =list->max_surname_length+list->max_name_length+3+3+5+5+7+11;
+        n = pList->m_usMaxSurnameLength + pList->m_usMaxNameLength + 3 + 3 + 5 + 5 + 7 + 11;
         while(n)
         {
             fprintf(file, "%c", '_');
@@ -367,9 +369,9 @@ void print_students_to_file(LIST *list)
         while (p)
         {
             fprintf(file, "|");
-            fprintf(file, "%-*s",list->max_surname_length, p->surname);
+            fprintf(file, "%-*s", pList->m_usMaxSurnameLength, p->m_szSurname);
             fprintf(file, "| |");
-            fprintf(file, "%-*s",list->max_name_length, p->name);
+            fprintf(file, "%-*s", pList->m_usMaxNameLength, p->m_szName);
             fprintf(file, "| |");
             fprintf(file, "%02d", p->date.day);
             fprintf(file, "| |");
@@ -379,95 +381,95 @@ void print_students_to_file(LIST *list)
             fprintf(file, "| |");
             for(int k=0; k<MARKS_COUNT; ++k)
             {
-                fprintf(file, "%1d", p->marks[k]);
+                fprintf(file, "%1d", p->m_iMarks[k]);
                 fprintf(file, "|");
             }
             fprintf(file, "\n");
-            p = p->next;
+            p = p->m_pNext;
         }
     }
 }
 
-LIST* delete_less_then_avg(LIST **list)
+SLIST* deleteStudentsLessThenAverage(SLIST** ppList)
 {
-    if(!((*list)->head))
+    if(!((*ppList)->m_pHead))
     {
         fprintf(stderr, "List is empty\n");
-        return *list;
+        return *ppList;
     }
-    STUDENT *p = (*list)->head, *pp = NULL;
+    SSTUDENT *p = (*ppList)->m_pHead, *pp = NULL;
     float sum;
     while(p)
     {
         sum = 0.0f;
         for(int i = 0; i<MARKS_COUNT; ++i)
         {
-            sum += (float)p->marks[i];
+            sum += (float)p->m_iMarks[i];
         }
         sum/=MARKS_COUNT;
-        if(sum<(*list)->avg_mark)
+        if(sum<(*ppList)->m_fAverageMark)
         {
-            pp = prev_student((*list)->head, p);
-            pp->next = p->next;
+            pp = getPreviousStudent((*ppList)->m_pHead, p);
+            pp->m_pNext = p->m_pNext;
             free(p);
             p=pp;
         }
-        p = p->next;
+        p = p->m_pNext;
     }
-    calculate_avg_list(list);
-    return *list;
+    calculateAverageMarkInList(ppList);
+    return *ppList;
 }
 
-LIST* display_two_the_smartest(LIST ** list)
+SLIST* displayTwoTheSmartestStudents(SLIST** ppList)
 {
 
-    if(list_size(*list)<3)
+    if(getListSize(*ppList) < 3)
     {
-        print_students(*list);
-        return *list;
+        showStudentsOnScreen(*ppList);
+        return *ppList;
     }
-    STUDENT *max_avg_1 = (*list)->head, *max_avg_2 = max_avg_1->next;
-    STUDENT *p = max_avg_2->next;
+    SSTUDENT *max_avg_1 = (*ppList)->m_pHead, *max_avg_2 = max_avg_1->m_pNext;
+    SSTUDENT *p = max_avg_2->m_pNext;
 
     while(p)
     {
-        if(p->avg > max_avg_1->avg)
+        if(p->m_fAverageMark > max_avg_1->m_fAverageMark)
         {
             max_avg_1 = p;
         }
-        p = p->next;
+        p = p->m_pNext;
     }
-    p = (*list)->head;
+    p = (*ppList)->m_pHead;
     while(p)
     {
-        if(p->avg > max_avg_2->avg && p!=max_avg_1)
+        if(p->m_fAverageMark > max_avg_2->m_fAverageMark && p != max_avg_1)
         {
             max_avg_2 = p;
         }
-        p = p->next;
+        p = p->m_pNext;
     }
-    STUDENT *pp1 = (STUDENT*)malloc(sizeof(STUDENT));
-    STUDENT *pp2 = (STUDENT*)malloc(sizeof(STUDENT));
+    SSTUDENT *pp1 = (SSTUDENT*)malloc(sizeof(SSTUDENT));
+    SSTUDENT *pp2 = (SSTUDENT*)malloc(sizeof(SSTUDENT));
     *pp1 = *max_avg_1;
     *pp2 = *max_avg_2;
-    pp1->next = pp2;
-    pp2->next = NULL;
-    LIST *list1 = (LIST*)malloc(sizeof(LIST));
-    list1->head=pp1;
-    list1->max_name_length = 0;
-    list1->max_surname_length = 0;
-    change_fields_length(&list1, pp1);
-    change_fields_length(&list1, pp2);
-    print_students(list1);
-    free_list(&list1);
-    return *list;
+    pp1->m_pNext = pp2;
+    pp2->m_pNext = NULL;
+    SLIST *list1 = (SLIST*)malloc(sizeof(SLIST));
+    list1->m_pHead=pp1;
+    list1->m_usMaxNameLength = 0;
+    list1->m_usMaxSurnameLength = 0;
+    changeFieldsLength(&list1, pp1);
+    changeFieldsLength(&list1, pp2);
+    showStudentsOnScreen(list1);
+    freeStudentsList(&list1);
+    return *ppList;
 }
 
-void read_from_file(LIST **list)
+void readStudentsFromFile(SLIST** ppList)
 {
     char ch;
     char path[100];
-    STUDENT*p;
+    SSTUDENT*p;
 
     fprintf(stdout, "Do you want to read from default file?(y/n):\n");
     fscanf(stdin,"%c", &ch);
@@ -487,45 +489,45 @@ void read_from_file(LIST **list)
         return;
     }
 
-    LIST *temp = NULL;
+    SLIST *temp = NULL;
 
     while (!feof(input))
     {
-        STUDENT *new_st = (STUDENT *) malloc(sizeof(STUDENT));
+        SSTUDENT *new_st = (SSTUDENT *) malloc(sizeof(SSTUDENT));
         if (!new_st) {
             fprintf(stderr, "can not allocate \n");
             return;
         }
-        fscanf(input, "%s %s", new_st->surname, new_st->name);
+        fscanf(input, "%s %s", new_st->m_szSurname, new_st->m_szName);
         fscanf(input, "%d.%d.%d", &(new_st->date.day), &(new_st->date.month), &(new_st->date.year));
-        fscanf(input, "%d %d %d %d %d", new_st->marks, new_st->marks + 1,
-                new_st->marks + 2, new_st->marks + 3,new_st->marks + 4);
-        new_st->next = NULL;
-        calculate_avg_student(&new_st);
-        if(!((*list)->head))
+        fscanf(input, "%d %d %d %d %d", new_st->m_iMarks, new_st->m_iMarks + 1,
+               new_st->m_iMarks + 2, new_st->m_iMarks + 3, new_st->m_iMarks + 4);
+        new_st->m_pNext = NULL;
+        calculateAverageMarkOfStudent(&new_st);
+        if(!((*ppList)->m_pHead))
         {
-            (*list)->head = new_st;
+            (*ppList)->m_pHead = new_st;
         }
         else
         {
-            p = (*list)->head;
-            for(;p->next;p=p->next);
-            p->next = new_st;
+            p = (*ppList)->m_pHead;
+            for(; p->m_pNext; p=p->m_pNext);
+            p->m_pNext = new_st;
         }
-        change_fields_length(list, new_st);
+        changeFieldsLength(ppList, new_st);
     }
-    calculate_avg_list(list);
+    calculateAverageMarkInList(ppList);
 }
 
-void free_list(LIST **list)
+void freeStudentsList(SLIST** ppList)
 {
-    STUDENT *tmp;
-    while ((*list)->head)
+    SSTUDENT *tmp;
+    while ((*ppList)->m_pHead)
     {
-        tmp = (*list)->head;
-        (*list)->head = (*list)->head->next;
+        tmp = (*ppList)->m_pHead;
+        (*ppList)->m_pHead = (*ppList)->m_pHead->m_pNext;
         free(tmp);
     }
-    free(*list);
-    *list = NULL;
+    free(*ppList);
+    *ppList = NULL;
 }
