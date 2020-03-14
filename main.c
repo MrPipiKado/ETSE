@@ -3,14 +3,14 @@
 
 int main()
 {
-    LIST *students_list = (LIST*)malloc(sizeof(LIST));
-    students_list->head = NULL;
-    students_list->avg_mark = 0.0f;
-    students_list->max_name_length = 0;
-    students_list->max_surname_length = 0;
-    int option = 0, sorted = 1;
+    SLIST *pStudentsList = (SLIST*)malloc(sizeof(SLIST));
+    pStudentsList->m_pHead = NULL;
+    pStudentsList->m_fAverageMark = 0.0f;
+    pStudentsList->m_usMaxNameLength = 0;
+    pStudentsList->m_usMaxSurnameLength = 0;
+    int iOption = 0, iSorted = 1;
     char surname[NAME_LENGTH];
-    print_students(students_list);
+    showStudentsOnScreen(pStudentsList);
     do
     {
 
@@ -23,43 +23,43 @@ int main()
                "6 - Read from file\n"
                "7 - Write to file\n"
                "0 - Exit\n");
-        option = get_int("Option:");
-        if(!option)break;
-        if(option==1)
-            if(sorted)
+        iOption = get_int("Option:");
+        if(!iOption)break;
+        if(iOption == 1)
+            if(iSorted)
             {
-                sort_by_surname(&(students_list->head));
-                sorted = 0;
+                sortStudentsBySurname(&(pStudentsList->m_pHead));
+                iSorted = 0;
             }
-        if(option==2)
+        if(iOption == 2)
         {
             printf("Enter surname:");
             scanf("%s", surname);
-            delete_by_surname(&students_list, surname);
+            deleteStudentBySurname(&pStudentsList, surname);
         }
-        if(option==3)
+        if(iOption == 3)
         {
-            delete_less_then_avg(&students_list);
+            deleteStudentsLessThenAverage(&pStudentsList);
         }
-        if(option==4)
+        if(iOption == 4)
         {
-            add_student(&students_list);
+            addStudent(&pStudentsList);
         }
-        if(option==5)
+        if(iOption == 5)
         {
-            display_two_the_smartest(&students_list);
+            displayTwoTheSmartestStudents(&pStudentsList);
         }
-        if(option==6)
+        if(iOption == 6)
         {
-            read_from_file(&students_list);
+            readStudentsFromFile(&pStudentsList);
         }
-        if(option==7)
+        if(iOption == 7)
         {
-            print_students_to_file(students_list);
+            saveStudentsToFile(pStudentsList);
         }
-        print_students(students_list);
+        showStudentsOnScreen(pStudentsList);
     }while(1);
-    free_list(&students_list);
+    freeStudentsList(&pStudentsList);
 
     return 0;
 }

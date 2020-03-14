@@ -3,6 +3,8 @@
 
 #define NAME_LENGTH 25
 #define MARKS_COUNT 5
+#define HEAD_LENGTH 34
+#define PATH_LENGTH 100
 
 #include <stdio.h>
 #include <string.h>
@@ -10,18 +12,13 @@
 #include <cs50.h>
 #include <ctype.h>
 
-typedef struct birthday
-{
-    int iDay;
-    int iMonth;
-    int iYear;
-} BIRTHDAY;
-
 typedef struct student
 {
     char m_szSurname[NAME_LENGTH];
     char m_szName[NAME_LENGTH];
-    BIRTHDAY date;
+    int m_iDay;
+    int m_iMonth;
+    int m_iYear;
     int m_iMarks[MARKS_COUNT];
     float m_fAverageMark;
     struct student *m_pNext;

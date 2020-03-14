@@ -83,7 +83,7 @@ static int printLineOnScreen(char cCh, int iCount)
 static int printHeadOfTableOnScreen(int iSurnameLength, int iNameLength)
 {
     printLineOnScreen('_', iSurnameLength + iNameLength
-                           + 3 + 3 + 5 + 5 + 7 + 11);
+                           + HEAD_LENGTH);
 
     fprintf(stdout, "|SURNAME");
     for(int i=7; i < iSurnameLength; ++i)
@@ -98,7 +98,7 @@ static int printHeadOfTableOnScreen(int iSurnameLength, int iNameLength)
     fprintf(stdout, "|YEAR| ");
     fprintf(stdout, "|  MARKS  |\n");
     printLineOnScreen('_', iSurnameLength + iNameLength
-                           + 3 + 3 + 5 + 5 + 7 + 11);
+                           + HEAD_LENGTH);
     return 0;
 }
 
@@ -196,10 +196,10 @@ SLIST* addStudent(SLIST** ppHead)
         return *ppHead;
     }
     int iOk = 0;
-    int j = 0;
+    int iChoice = 0;
     while (1)
     {
-        switch (j)
+        switch (iChoice)
         {
             case SURNAME:
                 while(!iOk)
@@ -232,20 +232,20 @@ SLIST* addStudent(SLIST** ppHead)
             case DAY:
                 do
                 {
-                    pEnd->date.iDay = get_int("Enter day of birth:");
-                }while(pEnd->date.iDay < 0 || pEnd->date.iDay > 31);
+                    pEnd->m_iDay = get_int("Enter day of birth:");
+                }while(pEnd->m_iDay < 0 || pEnd->m_iDay > 31);
                 break;
             case MONTH:
                 do
                 {
-                    pEnd->date.iMonth = get_int("Enter month of birth:");
-                }while(pEnd->date.iMonth < 0 || pEnd->date.iMonth > 12);
+                    pEnd->m_iMonth = get_int("Enter month of birth:");
+                }while(pEnd->m_iMonth < 0 || pEnd->m_iMonth > 12);
                 break;
             case YEAR:
                 do
                 {
-                    pEnd->date.iYear = get_int("Enter year of birth:");
-                }while(pEnd->date.iYear < 1900 || pEnd->date.iYear > 2020);
+                    pEnd->m_iYear = get_int("Enter year of birth:");
+                }while(pEnd->m_iYear < 1900 || pEnd->m_iYear > 2020);
                 break;
             case MARK_0:
                 do
@@ -280,8 +280,8 @@ SLIST* addStudent(SLIST** ppHead)
             default:
                 fprintf(stdout, "Done.\n");
         }
-        j++;
-        if(j>MARK_4)break;
+        iChoice++;
+        if(iChoice > MARK_4)break;
     }
     calculateAverageMarkOfStudent(&pEnd);
     sortStudentsBySurname(&((*ppHead)->m_pHead));
@@ -307,11 +307,11 @@ void showStudentsOnScreen(SLIST* pList)
         fprintf(stdout, "| |");
         fprintf(stdout, "%-*s", pList->m_usMaxNameLength, pTmp->m_szName);
         fprintf(stdout, "| |");
-        fprintf(stdout, "%02d", pTmp->date.iDay);
+        fprintf(stdout, "%02d", pTmp->m_iDay);
         fprintf(stdout, "| |");
-        fprintf(stdout, "%02d", pTmp->date.iMonth);
+        fprintf(stdout, "%02d", pTmp->m_iMonth);
         fprintf(stdout, "| |");
-        fprintf(stdout, "%-4d", pTmp->date.iYear);
+        fprintf(stdout, "%-4d", pTmp->m_iYear);
         fprintf(stdout, "| |");
         for(int k=0; k<MARKS_COUNT; ++k)
         {
@@ -327,7 +327,7 @@ void showStudentsOnScreen(SLIST* pList)
 void saveStudentsToFile(SLIST* pList)
 {
     fprintf(stdout, "Enter full path to file");
-    char szFileName[100];
+    char szFileName[PATH_LENGTH];
     scanf("%s", szFileName);
     FILE* pFile = fopen(szFileName, "wt");
     if(!pFile)
@@ -338,11 +338,11 @@ void saveStudentsToFile(SLIST* pList)
     else
     {
         SSTUDENT *pTmp = pList->m_pHead;
-        int n = pList->m_usMaxSurnameLength + pList->m_usMaxNameLength + 3 + 3 + 5 + 5 + 7 + 11;
-        while(n)
+        int iCounter = pList->m_usMaxSurnameLength + pList->m_usMaxNameLength + HEAD_LENGTH;
+        while(iCounter)
         {
             fprintf(pFile, "%c", '_');
-            n--;
+            iCounter--;
         }
         fprintf(pFile, "\n");
 
@@ -359,11 +359,11 @@ void saveStudentsToFile(SLIST* pList)
         fprintf(pFile, "|YEAR| ");
         fprintf(pFile, "|  MARKS  |\n");
 
-        n = pList->m_usMaxSurnameLength + pList->m_usMaxNameLength + 3 + 3 + 5 + 5 + 7 + 11;
-        while(n)
+        iCounter = pList->m_usMaxSurnameLength + pList->m_usMaxNameLength + HEAD_LENGTH;
+        while(iCounter)
         {
             fprintf(pFile, "%c", '_');
-            n--;
+            iCounter--;
         }
         fprintf(pFile, "\n");
         while (pTmp)
@@ -373,11 +373,11 @@ void saveStudentsToFile(SLIST* pList)
             fprintf(pFile, "| |");
             fprintf(pFile, "%-*s", pList->m_usMaxNameLength, pTmp->m_szName);
             fprintf(pFile, "| |");
-            fprintf(pFile, "%02d", pTmp->date.iDay);
+            fprintf(pFile, "%02d", pTmp->m_iDay);
             fprintf(pFile, "| |");
-            fprintf(pFile, "%02d", pTmp->date.iMonth);
+            fprintf(pFile, "%02d", pTmp->m_iMonth);
             fprintf(pFile, "| |");
-            fprintf(pFile, "%-4d", pTmp->date.iYear);
+            fprintf(pFile, "%-4d", pTmp->m_iYear);
             fprintf(pFile, "| |");
             for(int k=0; k<MARKS_COUNT; ++k)
             {
@@ -454,14 +454,14 @@ SLIST* displayTwoTheSmartestStudents(SLIST** ppList)
     *pTmp2 = *pMaxAverage2;
     pTmp1->m_pNext = pTmp2;
     pTmp2->m_pNext = NULL;
-    SLIST *list1 = (SLIST*)malloc(sizeof(SLIST));
-    list1->m_pHead=pTmp1;
-    list1->m_usMaxNameLength = 0;
-    list1->m_usMaxSurnameLength = 0;
-    changeFieldsLength(&list1, pTmp1);
-    changeFieldsLength(&list1, pTmp2);
-    showStudentsOnScreen(list1);
-    freeStudentsList(&list1);
+    SLIST *pList1 = (SLIST*)malloc(sizeof(SLIST));
+    pList1->m_pHead=pTmp1;
+    pList1->m_usMaxNameLength = 0;
+    pList1->m_usMaxSurnameLength = 0;
+    changeFieldsLength(&pList1, pTmp1);
+    changeFieldsLength(&pList1, pTmp2);
+    showStudentsOnScreen(pList1);
+    freeStudentsList(&pList1);
     return *ppList;
 }
 
@@ -497,7 +497,7 @@ void readStudentsFromFile(SLIST** ppList)
             return;
         }
         fscanf(pFile, "%s %s", pNewStudent->m_szSurname, pNewStudent->m_szName);
-        fscanf(pFile, "%d.%d.%d", &(pNewStudent->date.iDay), &(pNewStudent->date.iMonth), &(pNewStudent->date.iYear));
+        fscanf(pFile, "%d.%d.%d", &(pNewStudent->m_iDay), &(pNewStudent->m_iMonth), &(pNewStudent->m_iYear));
         fscanf(pFile, "%d %d %d %d %d", pNewStudent->m_iMarks, pNewStudent->m_iMarks + 1,
                pNewStudent->m_iMarks + 2, pNewStudent->m_iMarks + 3, pNewStudent->m_iMarks + 4);
         pNewStudent->m_pNext = NULL;
