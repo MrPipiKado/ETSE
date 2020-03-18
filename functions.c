@@ -17,6 +17,8 @@ static int getListSize(SLIST* pList)
     return iCount;
 }
 
+//------------------------------------------------------------------------------
+
 static void changeFieldsLength(SLIST** ppList, SSTUDENT* pStudent)
 {
     if(strlen(pStudent->m_szName) > (*ppList)->m_usMaxNameLength)
@@ -25,6 +27,7 @@ static void changeFieldsLength(SLIST** ppList, SSTUDENT* pStudent)
         (*ppList)->m_usMaxSurnameLength = strlen(pStudent->m_szSurname);
 }
 
+//------------------------------------------------------------------------------
 
 static SLIST* calculateAverageMarkInList(SLIST** ppList)
 {
@@ -46,6 +49,8 @@ static SLIST* calculateAverageMarkInList(SLIST** ppList)
     return *ppList;
 }
 
+//------------------------------------------------------------------------------
+
 static SSTUDENT* calculateAverageMarkOfStudent(SSTUDENT** ppStudent)
 {
     float fSum = 0.0f;
@@ -56,6 +61,8 @@ static SSTUDENT* calculateAverageMarkOfStudent(SSTUDENT** ppStudent)
     (*ppStudent)->m_fAverageMark = fSum / MARKS_COUNT;
     return *ppStudent;
 }
+
+//------------------------------------------------------------------------------
 
 static SSTUDENT* getPreviousStudent(SSTUDENT* pHead, SSTUDENT* pCurrent)
 {
@@ -69,6 +76,8 @@ static SSTUDENT* getPreviousStudent(SSTUDENT* pHead, SSTUDENT* pCurrent)
     }
 }
 
+//------------------------------------------------------------------------------
+
 static int printLineOnScreen(char cCh, int iCount)
 {
     while(iCount)
@@ -79,6 +88,8 @@ static int printLineOnScreen(char cCh, int iCount)
     fprintf(stdout, "\n");
     return 0;
 }
+
+//------------------------------------------------------------------------------
 
 static int printHeadOfTableOnScreen(int iSurnameLength, int iNameLength)
 {
@@ -101,6 +112,8 @@ static int printHeadOfTableOnScreen(int iSurnameLength, int iNameLength)
                            + HEAD_LENGTH);
     return 0;
 }
+
+//------------------------------------------------------------------------------
 
 SSTUDENT* sortStudentsBySurname(SSTUDENT** ppHead)
 {
@@ -144,6 +157,8 @@ SSTUDENT* sortStudentsBySurname(SSTUDENT** ppHead)
     return *ppHead;
 }
 
+//------------------------------------------------------------------------------
+
 SLIST* deleteStudentBySurname(SLIST** ppList, char* pszSurname)
 {
     SSTUDENT *pTmp1 = (*ppList)->m_pHead, *pTmp2 = NULL;
@@ -175,6 +190,8 @@ SLIST* deleteStudentBySurname(SLIST** ppList, char* pszSurname)
     fprintf(stdout, "Can not find %s", pszSurname);
     return *ppList;
 }
+
+//------------------------------------------------------------------------------
 
 SLIST* addStudent(SLIST** ppHead)
 {
@@ -291,6 +308,8 @@ SLIST* addStudent(SLIST** ppHead)
     return *ppHead;
 }
 
+//------------------------------------------------------------------------------
+
 void showStudentsOnScreen(SLIST* pList)
 {
     if(!(pList->m_pHead))
@@ -323,6 +342,8 @@ void showStudentsOnScreen(SLIST* pList)
     }
     printf("\n");
 }
+
+//------------------------------------------------------------------------------
 
 void saveStudentsToFile(SLIST* pList)
 {
@@ -390,6 +411,8 @@ void saveStudentsToFile(SLIST* pList)
     }
 }
 
+//------------------------------------------------------------------------------
+
 SLIST* deleteStudentsLessThenAverage(SLIST** ppList)
 {
     if(!((*ppList)->m_pHead))
@@ -419,6 +442,8 @@ SLIST* deleteStudentsLessThenAverage(SLIST** ppList)
     calculateAverageMarkInList(ppList);
     return *ppList;
 }
+
+//------------------------------------------------------------------------------
 
 SLIST* displayTwoTheSmartestStudents(SLIST** ppList)
 {
@@ -465,10 +490,12 @@ SLIST* displayTwoTheSmartestStudents(SLIST** ppList)
     return *ppList;
 }
 
+//------------------------------------------------------------------------------
+
 void readStudentsFromFile(SLIST** ppList)
 {
     char cCh;
-    char szPath[100];
+    char szPath[PATH_LENGTH];
     SSTUDENT* pTmp1;
 
     fprintf(stdout, "Do you want to read from default file?(y/n):\n");
@@ -516,6 +543,8 @@ void readStudentsFromFile(SLIST** ppList)
     }
     calculateAverageMarkInList(ppList);
 }
+
+//------------------------------------------------------------------------------
 
 void freeStudentsList(SLIST** ppList)
 {
