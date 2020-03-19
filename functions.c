@@ -409,6 +409,7 @@ void saveStudentsToFile(SLIST* pList)
             pTmp = pTmp->m_pNext;
         }
     }
+    fclose(pFile);
 }
 
 //------------------------------------------------------------------------------
