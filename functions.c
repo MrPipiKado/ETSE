@@ -177,7 +177,7 @@ SLIST* deleteStudentBySurname(SLIST** ppList, char* pszSurname)
     pTmp1 = (*ppList)->m_pHead->m_pNext;
     while(pTmp1)
     {
-        if(!strcmp(((*ppList)->m_pHead)->m_szSurname, pszSurname))
+        if(!strcmp(pTmp1->m_szSurname, pszSurname))
         {
             pTmp2 = getPreviousStudent((*ppList)->m_pHead, pTmp1);
             pTmp2->m_pNext = pTmp1->m_pNext;
@@ -187,7 +187,7 @@ SLIST* deleteStudentBySurname(SLIST** ppList, char* pszSurname)
         }
         pTmp1 = pTmp1->m_pNext;
     }
-    fprintf(stdout, "Can not find %s", pszSurname);
+    fprintf(stdout, "Can not find %s\n", pszSurname);
     return *ppList;
 }
 
