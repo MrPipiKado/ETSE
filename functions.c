@@ -174,7 +174,7 @@ SLIST* deleteStudentBySurname(SLIST** ppList, char* pszSurname)
         calculateAverageMarkInList(ppList);
         return *ppList;
     }
-    pTmp1 = (*ppList)->m_pHead;
+    pTmp1 = (*ppList)->m_pHead->m_pNext;
     while(pTmp1)
     {
         if(!strcmp(((*ppList)->m_pHead)->m_szSurname, pszSurname))
