@@ -416,6 +416,7 @@ void saveStudentsToFile(SLIST* pList)
 
 SLIST* deleteStudentsLessThenAverage(SLIST** ppList)
 {
+    int iCheck = 0;
     if(!((*ppList)->m_pHead))
     {
         fprintf(stderr, "List is empty\n");
@@ -437,8 +438,13 @@ SLIST* deleteStudentsLessThenAverage(SLIST** ppList)
             pTmp2->m_pNext = pTmp1->m_pNext;
             free(pTmp1);
             pTmp1=pTmp2;
+            iCheck = 1;
         }
         pTmp1 = pTmp1->m_pNext;
+    }
+    if(!iCheck)
+    {
+        fprintf(stderr, "No one was deleted\n");
     }
     calculateAverageMarkInList(ppList);
     return *ppList;

@@ -1,0 +1,3 @@
+/home/user/Desktop/ETSE/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/user/Desktop/ETSE/cmake-build-debug/CMakeFiles/ETSE.dir
+/home/user/Desktop/ETSE/cmake-build-debug/CMakeFiles/edit_cache.dir

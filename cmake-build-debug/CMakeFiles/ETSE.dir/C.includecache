@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/user/Desktop/ETSE/functions.c
+functions.h
+/home/user/Desktop/ETSE/functions.h
+
+/home/user/Desktop/ETSE/functions.h
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+cs50.h
+-
+ctype.h
+-
+

@@ -1,0 +1,1011 @@
+____________________________________________________
+|SURNAME   | |NAME    | |DT| |MN| |YEAR| |  MARKS  |
+____________________________________________________
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|3|
+|Andreiko  | |Markiian| |23| |10| |2002| |5|5|5|5|5|
+|Artech    | |Orest   | |01| |02| |2002| |4|5|4|5|4|
+|Bezzubiak | |Tania   | |14| |11| |2001| |5|4|5|4|5|
+|Buchkovsky| |Dmytro  | |03| |06| |2001| |3|4|3|4|3|
+|Havryliak | |Bogdan  | |02| |05| |2000| |2|3|4|5|4|
+|Horcharuk | |Iryna   | |03| |07| |2001| |3|4|5|4|5|
